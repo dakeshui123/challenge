@@ -39,8 +39,8 @@ def save_depth_to_txt(depth_map, output_folder, filename_without_extension):
     np.savetxt(output_file, depth_map.reshape(-1, 1), delimiter=',', fmt='%u')  # %u表示无符号整数  
   
 # 设置输入和输出文件夹  
-input_folder = 'dataset/train/raw_data/'  
-output_folder = 'dataset/train/depth_txt/'  
+input_folder = 'data/bc_pointclod/raw_data/'  
+output_folder = 'data/bc_pointclod/depth_txt/'  
 if not os.path.exists(output_folder):  
     os.makedirs(output_folder)  
   
